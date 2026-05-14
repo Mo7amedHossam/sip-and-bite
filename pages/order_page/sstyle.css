@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+}
+.hero {
+    background-attachment: none;
+    background-repeat: no-repeat;
+    padding: 0px;
+    margin: 0px;
+}
+.showcase {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+
+    gap: 20px;
+}
+.showcase img {
+    max-width: 100%;
+    height: auto;
+    object-fit: fill;
+}
+
+.content-area {
+    display: flex;
+    align-items: center;
+    background-color: rgba(15, 24, 12, 0.637);
+    color: white;
+    width: 100%;
+    padding: auto;
+    height: 90px;
+}
+.logo {
+    height: 70px; /* كبّر الرقم ده لحد ما يوصل للحجم اللي يعجبك */
+    width: auto; /* بيحافظ على شكل اللوجو من غير ما يتمط */
+    margin-right: 10px;
+}
+
+ul li {
+    display: flex;
+    justify-content: right;
+    gap: 100px;
+    width: 95%;
+    list-style: none;
+    padding: auto;
+    margin: auto;
+}
+
+.one:hover {
+    text-decoration: underline;
+}
+
+.lol {
+    display: flex;
+    font-size: 35px;
+}
+.lol {
+    font-style: i;
+    color: rgb(255, 255, 255);
+    padding: auto;
+    margin: auto;
+    justify-content: center;
+}
+.two:hover {
+    text-decoration: underline;
+}
+.three:hover {
+    text-decoration: underline;
+}
+
+body {
+    background-image: url(../../assets/images/vintage-old-rustic-cutlery-dark.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    color: white;
+}
+.orderbutton {
+    background-color: rgb(0, 0, 0);
+    font-size: large;
+    border-radius: 100px;
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    font-style: italic;
+}
+.paragraph {
+    padding: 10px;
+    margin: 10px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.orderbutton:hover {
+    font-size: x-large;
+    color: white;
+}
+.ez {
+    display: flex;
+    background-repeat: no-repeat;
+    padding: auto;
+    margin: auto;
+    width: 65%;
+}
+/*.down {
+    /*display: inline;*/
+/*background-size: cover;*/
+/*width: 50%;*/
+/*padding: auto;
+    margin: auto;*/
+/*}*/
+
+/*.middle {
+    display: inline;
+    background-size: cover;
+    width: 45%;
+    padding: auto;
+    margin: auto;
+}*/
+/* ----------------------------- */
+/* 1. الحاوية اللي شايلة الأيقونات */
+.social-contact {
+    display: flex; /* بيخليهم جنب بعض */
+    justify-content: center; /* بيجيبهم في نص الصفحة بالعرض */
+    align-items: center; /* بيوسطنهم طولياً */
+    gap: 40px; /* مسافة بين الفيس والواتساب */
+    margin-top: 20px; /* المسافة اللي هتنزلهم تحت الزرار (تقدر تزودها) */
+    padding-bottom: 20px;
+}
+
+/* 2. تنسيق الأيقونة نفسها */
+.social-icon {
+    text-decoration: none; /* بيشيل أي خط تحت الأيقونة */
+    font-size: 50px; /* حجم الأيقونة (كبرها أو صغرها من هنا) */
+    color: #ffffff; /* لونها الأساسي أبيض */
+    transition: all 0.4s ease; /* نعومة في الحركة لما تلمسها بالماوس */
+}
+
+/* 3. تأثير خاص بالفيسبوك عند الوقوف عليه */
+.fb:hover {
+    color: #1877f2; /* لون فيسبوك الأزرق */
+    transform: translateY(-5px); /* الأيقونة تترفع لفوق شوية */
+    filter: drop-shadow(0 0 15px #1877f2); /* بيعمل نور أزرق حواليها */
+}
+
+/* 4. تأثير خاص بالواتساب عند الوقوف عليه */
+.wa:hover {
+    color: #25d366; /* لون واتساب الأخضر */
+    transform: translateY(-5px); /* تترفع لفوق شوية */
+    filter: drop-shadow(0 0 15px #25d366); /* بيعمل نور أخضر حواليها */
+}
+/* -- */
+.pp {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/*.container {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+}*/
+
+/* Header */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 120px;
+}
+
+/* Nav */
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Main */
+.main {
+    margin-top: 20px;
+}
+
+/* Button */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .showcase {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
